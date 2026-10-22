@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JSA Outreach</title>
+<meta name="description" content="JSA Outreach is Mohd Ashhar's personal job-search tool: one personal email, from his own Gmail, to each person hiring for a role he fits.">
+<style>
+  :root { --bg: #ffffff; --text: #1d2228; --muted: #5b6672; --rule: #e3e7eb; --link: #0b5cad; --code: #f3f5f7; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #111418; --text: #e6e9ec; --muted: #9aa5b1; --rule: #262c33; --link: #7cb7ff; --code: #1b2026; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .3rem; }
+  .sub { color: var(--muted); margin: 0 0 2rem; }
+  h2 { font-size: 1.1rem; margin: 2.2rem 0 .5rem; }
+  a { color: var(--link); }
+  ul { padding-left: 1.2rem; }
+  li { margin: .3rem 0; }
+  code { background: var(--code); padding: .05rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>JSA Outreach</h1>
+  <p class="sub">A personal job-search tool, built and used by Mohd Ashhar.</p>
+
+  <p>JSA Outreach helps one person apply for jobs: Mohd Ashhar, a full-stack AI engineer based in Noida, India.
+  It finds people who are hiring for AI and full-stack engineering roles, from public job posts on LinkedIn, Hacker News
+  "Who is hiring?" threads and remote job boards. It then sends each of them one short, personal email from his own Gmail
+  account, with his resume attached.</p>
+
+  <p>It is not a public service. Nobody else can sign in to it or send email with it.</p>
+
+  <h2>Google account access</h2>
+  <p>With the owner's permission, JSA Outreach uses the Gmail API on his own Gmail account to:</p>
+  <ul>
+    <li>create drafts and send his job-application emails (<code>gmail.compose</code>);</li>
+    <li>read replies to those emails and bounce notices about them (<code>gmail.readonly</code>). That way it never writes
+      again to anyone who replied, whose address bounced, or who asked not to be contacted.</li>
+  </ul>
+  <p>The <a href="privacy.html">privacy policy</a> has the details.</p>
+
+  <h2>Contact</h2>
+  <p>Mohd Ashhar · <a href="mailto:ashharsiddiqui786@gmail.com">ashharsiddiqui786@gmail.com</a> ·
+    <a href="https://www.linkedin.com/in/mohd-ashhar/">LinkedIn</a> · <a href="https://github.com/Mohd-Ashhar">GitHub</a></p>
+
+  <footer><a href="privacy.html">Privacy policy</a></footer>
+</main>
+</body>
+</html>
